@@ -1,9 +1,10 @@
 import { readFileSync } from "fs";
 
-const schematic = readFileSync("./3/input.txt", "utf-8")
+const schematic = readFileSync("./3/test.txt", "utf-8")
   .split("\n")
   .map((l) => l.split(""));
 
+console.log(schematic); 
 const isDigitRegex = /\b[0-9]\b/;
 
 const numbers = [];
